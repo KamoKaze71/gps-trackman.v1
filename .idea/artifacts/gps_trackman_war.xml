@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="gps-trackman:war">
+    <output-path>$PROJECT_DIR$/gps-trackman/target</output-path>
+    <root id="archive" name="gps-trackman.war">
+      <element id="artifact" artifact-name="gps-trackman:war exploded" />
+    </root>
+  </artifact>
+</component>

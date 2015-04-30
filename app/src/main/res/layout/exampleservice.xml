@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AppBaseTheme"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_height="wrap_content"
+        android:text="Start Service" >
+
+    </Button>
+
+    <Button
+        android:id="@+id/btnStop"
+
+        android:text="Stop Service" >
+    </Button>
+
+    <Button
+        android:id="@+id/btnBind"
+      
+        android:text="Bind to Service" >
+    </Button>
+
+    <Button
+        android:id="@+id/btnUnbind"
+ 
+        android:text="Unbind from Service" >
+    </Button>
+
+    <TextView
+        android:id="@+id/textStatus"
+  
+        android:text="Status Goes Here" />
+
+    <TextView
+        android:id="@+id/textIntValue"
+ 
+        android:text="Integer Value Goes Here" />
+
+    <TextView
+        android:id="@+id/textStrValue"
+   
+        android:text="String Value Goes Here" />
+
+    <Button
+        android:id="@+id/btnUpby1"
+
+        android:layout_gravity="bottom"
+        android:text="Increment by 1" >
+    </Button>
+
+    <Button
+        android:id="@+id/btnUpby10"
+
+       
+        android:text="Increment by 10" >
+    </Button>
+    <TextView
+        android:id="@+id/textStrLOG"
+
+        android:text="" />
+</LinearLayout>

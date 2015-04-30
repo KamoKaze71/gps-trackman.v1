@@ -1,0 +1,68 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/AppBaseTheme"
+   
+    android:fitsSystemWindows="true"
+    tools:context="com.pekam.myandroidtheme.FullscreenActivity" >
+
+    <!--
+         The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc.
+    -->
+
+    <TextView
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:text="@string/dummy_content"
+        android:textColor="#33b5e5"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <!--
+         This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows.
+    -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true" >
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="@style/FullscreenTheme"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"      
+            tools:ignore="UselessParent" >
+
+            <Button
+                android:id="@+id/dummy_button"
+                android:onClick="onButtonClick"
+                android:text="@string/dummy_button" />
+            
+             <Button
+                android:id="@+id/dummy_button1"
+                android:onClick="onButtonClick1"
+                android:text="Start Fragment Demo" />
+            
+			<Button
+                android:id="@+id/dummy_button2"
+                android:onClick="onButtonClick2"
+                android:text="@string/dummy_button2" />
+			
+			<Button
+                android:id="@+id/dummy_button3"
+                android:onClick="onButtonClick3"
+                android:text="@string/dummy_button3" />
+			
+        </LinearLayout>
+
+      
+  
+    </FrameLayout>
+
+</FrameLayout>

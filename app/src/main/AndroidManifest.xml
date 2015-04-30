@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pekam"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- External storage for caching. -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- My Location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- Maps API needs OpenGL ES 2.0. -->
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+    
+    
+    
+    <!-- End of copy. -->
+    <application
+        android:allowBackup="true"
+        android:configChanges="orientation|keyboardHidden|screenSize"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppBaseTheme" >
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyCtfDgC4UKnb7C4lVYaRyTq-waVn2j4rq0" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        
+        <uses-library android:name="com.google.android.maps" />
+        
+    
+        <service android:name="com.pekam.androidservice.MyService" />
+
+        <activity
+            android:name="com.pekam.myandroidtheme.TabBarActivity"
+            android:label="@string/title_activity_main" />
+        <activity
+            android:name="com.pekam.demomap.MainActivity"
+            android:label="@string/title_activity_main" />
+        <activity
+            android:name="com.pekam.myandroidtheme.DefaulFullscreenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/FullscreenTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.pekam.location.ShowLocationActivity"
+            android:label="@string/location_demo_activity" />
+        <activity
+            android:name="com.pekam.androidservice.MyServiceControllerActivity"
+            android:label="@string/MyServiceControllerActivity" />
+        <activity
+            android:name="com.pekam.demomap.LegalInfoActivity"
+            android:label="@string/legal_info" />
+        <activity
+            android:name="com.pekam.demomap.BasicMapDemoActivity"
+            android:label="@string/basic_map_demo_label" />
+        <activity
+            android:name="com.pekam.demomap.CameraDemoActivity"
+            android:label="@string/camera_demo_label" />
+        <activity
+            android:name="com.pekam.demomap.CircleDemoActivity"
+            android:label="@string/circle_demo_label" />
+        <activity
+            android:name="com.pekam.demomap.EventsDemoActivity"
+            android:label="@string/events_demo_label" />
+        <activity
+            android:name="com.pekam.demomap.GroundOverlayDemoActivity"
+            android:label="@string/ground_overlay_demo_label" />
+        <activity
+            android:name="com.pekam.demomap.IndoorDemoActivity"
+            android:label="@string/indoor_demo_label" />
+        <activity
+            android:name="com.pekam.demomap.LayersDemoActivity"
+            android:label="@string/layers_demo_label" />
+        <activity
+            android:name="com.pekam.demomap.LocationSourceDemoActivity"
+            android:label="@string/location_source_demo_label" />
+        <activity
+            android:name="com.pekam.demomap.MapInPagerDemoActivity"
+            android:label="@string/map_in_pager_demo_label" />
+        <activity
+            android:name="com.pekam.demomap.MarkerDemoActivity"
+            android:label="@string/marker_demo_label" />
+        <activity
+            android:name="com.pekam.demomap.MultiMapDemoActivity"
+            android:label="@string/multi_map_demo_label" />
+
+        <activity
+            android:name="com.pekam.demomap.OptionsDemoActivity"
+            android:label="@string/options_demo_label" />
+        <activity
+            android:name="com.pekam.demomap.PolygonDemoActivity"
+            android:label="@string/polygon_demo_label" />
+        <activity
+            android:name="com.pekam.demomap.PolylineDemoActivity"
+            android:label="@string/polyline_demo_label" />
+        <activity
+            android:name="com.pekam.demomap.ProgrammaticDemoActivity"
+            android:label="@string/programmatic_demo_label" />
+        <activity
+            android:name="com.pekam.demomap.RawMapViewDemoActivity"
+            android:label="@string/raw_map_view_demo_label" />
+        <activity
+            android:name="com.pekam.demomap.RetainMapDemoActivity"
+            android:label="@string/retain_map_demo_label" />
+        <activity
+            android:name="com.pekam.demomap.SaveStateDemoActivity"
+            android:label="@string/save_state_demo_label" />
+        <activity
+            android:name="com.pekam.demomap.SnapshotDemoActivity"
+            android:label="@string/snapshot_demo_label" />
+        <activity
+            android:name="com.pekam.demomap.SplitStreetViewPanoramaAndMapDemoActivity"
+            android:label="@string/split_street_view_panorama_and_map_demo_label" />
+        <activity
+            android:name="com.pekam.demomap.StreetViewPanoramaBasicDemoActivity"
+            android:label="@string/street_view_panorama_basic_demo_label" />
+        <activity
+            android:name="com.pekam.demomap.StreetViewPanoramaEventsDemoActivity"
+            android:label="@string/street_view_panorama_events_demo_label" />
+        <activity
+            android:name="com.pekam.demomap.StreetViewPanoramaNavigationDemoActivity"
+            android:label="@string/street_view_panorama_navigation_demo_label" />
+        <activity
+            android:name="com.pekam.demomap.StreetViewPanoramaOptionsDemoActivity"
+            android:label="@string/street_view_panorama_options_demo_label" />
+        <activity
+            android:name="com.pekam.demomap.StreetViewPanoramaViewDemoActivity"
+            android:label="@string/street_view_panorama_view_demo_label" />
+        <activity
+            android:name="com.pekam.demomap.TileCoordinateDemoActivity"
+            android:label="@string/tile_coordinate_demo_label" />
+        <activity
+            android:name="com.pekam.demomap.TileOverlayDemoActivity"
+            android:label="@string/tile_overlay_demo_label" />
+        <activity
+            android:name="com.pekam.demomap.UiSettingsDemoActivity"
+            android:label="@string/ui_settings_demo_label" />
+        <activity
+            android:name="com.pekam.demomap.VisibleRegionDemoActivity"
+            android:label="@string/visible_region_demo_label" />
+        <!-- created by pk at 2014-06-13 11:46:27 -->
+        <activity android:name="com.pekam.myandroidtheme.MyBaseActivity" />
+        <activity
+            android:name="com.pekam.myandroidtheme.ItemListActivity"
+            android:label="@string/title_item_list"
+            android:parentActivityName="com.pekam.myandroidtheme.FullscreenActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pekam.myandroidtheme.FullscreenActivity" />
+        </activity>
+        <activity
+            android:name="com.pekam.myandroidtheme.ItemDetailActivity"
+            android:label="@string/title_item_detail"
+            android:parentActivityName="com.pekam.myandroidtheme.ItemListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pekam.myandroidtheme.ItemListActivity" />
+        </activity>
+        <activity
+            android:name="com.pekam.myandroidtheme.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName="com.pekam.myandroidtheme.FullscreenActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pekam.myandroidtheme.FullscreenActivity" />
+        </activity>
+
+    </application>
+
+</manifest>

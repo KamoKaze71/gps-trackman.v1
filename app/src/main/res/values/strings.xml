@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MyAndroidTheme</string>
+    <string name="dummy_button">Start GMap Demo</string>
+    <string name="dummy_button1">---</string>
+    <string name="dummy_button2">Start Location Demo</string>
+    <string name="dummy_button3">Start Service Controller Demo</string>
+    <string name="dummy_button4">Start REST API Demo</string>
+    <string name="dummy_button5">Start Animation Demo</string>
+    <string name="MyServiceControllerActivity">MyServiceControllerActivity</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_main">Google Map Demo</string>
+    <string name="title_activity_main2">MainActivity</string>
+    <string name="title_activity_main3">MainActivity</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="action_settings">Settings</string>
+    <string name="location_demo_activity">Location Demo</string>
+    <string name="service_started">Example Service started</string>
+    <string name="service_label">Example Service Label</string>
+    <string name="title_item_list">Items</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="title_activity_defaul_fullscreen">DefaulFullscreenActivity</string>
+
+</resources>
